@@ -1,0 +1,3 @@
+      steps:
+      - name: gcr.io/fir-freetier-755c8/firebase
+        args: ['deploy', '--project=fir-freetier-755c8']
