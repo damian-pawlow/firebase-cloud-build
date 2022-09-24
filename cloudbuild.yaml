@@ -6,4 +6,4 @@
         - cd /workspace/functions/
         - npm install firebase-functions@latest firebase-admin@latest --save
         id: Deploy 
-        -args: ['deploy', '--project=fir-freetier-755c8']
+        args: ['deploy', '--project=fir-freetier-755c8']
