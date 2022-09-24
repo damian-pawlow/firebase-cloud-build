@@ -1,3 +1,9 @@
       steps:
       - name: gcr.io/fir-freetier-755c8/firebase
-        args: ['deploy', '--project=fir-freetier-755c8']
+        id: Install dependecies
+        entrypoint: /bin/sh
+        args:
+        - cd /workspace/functions/
+        - npm install firebase-functions@latest firebase-admin@latest --save
+        id: Deploy 
+        -args: ['deploy', '--project=fir-freetier-755c8']
